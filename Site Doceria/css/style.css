@@ -1,0 +1,263 @@
+/* Geral */
+html{
+    font-family: 'Open Sans', sans-serif;
+    color: #373a3c;
+}
+section{
+    padding-left: 50px;
+}
+
+/* Side Bar*/
+#sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #006599;
+    padding-top: 40px;
+}
+
+#sidebar h1{
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 32px;
+
+}
+
+#sidebar a{
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+#sidebar a:hover{
+    text-decoration: none;
+    color: #f4ef5e;
+}
+
+#sidebar li{
+    padding: 20px;
+}
+.sidebar-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+.logo-doceria{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+}
+
+/* content */
+.content{
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+}
+.content h1, .content h2{
+    color: #006599;
+    margin-bottom: 30px;
+}
+.content h1{
+    font-size: 48px;
+}
+.content h2{
+    font-size: 35px;
+}
+
+/* incio */
+#sessao-inicio{
+    padding-left: 0;
+}
+.sessao-inicio-content{
+    padding-left: 50px;
+}
+
+#sessao-inicio .banner-inicio{
+    height: 500px;
+    background-image: url('../img/banner2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#sessao-inicio h1{
+    margin-top: 70px;
+}
+
+#sessao-inicio::after, #sessao-sobre::after{
+    content: '';
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+.sessao-minibanner{
+    height: 400px;
+    width: 300px;
+    background-image: url('../img/banner3.jpg');
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.sessao-description{
+    position: absolute;
+    left: 370px;
+    padding-right: 30px;
+}
+.sessao-description p{
+    line-height: 2 ;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+.sessao-inicio-btn, form input[type=submit] {
+    background-color: #006599;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 40px;
+    transition: .5s;
+    display: block;
+    width: 100px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25px;
+}
+.sessao-inicio-btn:hover, form input[type=submit]:hover {
+    background-color: #2790c6;
+
+}
+
+/* sobre */
+#sessao-sobre .sessao-minibanner{
+    float: right;
+    margin-right: 50px;
+    background-image: url('../img/banner4.jpg');
+}
+#sessao-sobre .sessao-description{
+    position: absolute;
+    left: 25px;
+    width: calc(100% - 400px);
+}
+
+/* galerias */
+.banner-galeria{
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+    height: 200px;
+}
+#sessao-doces1, #sessao-doces2, #sessao-doces3{
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+/* sessao 1 */
+.doces1-img{
+    width: 18.8%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+#img1{
+    background-image: url('../img/galeria1.jpg');
+    margin-left: 0;
+}
+#img2{
+    background-image: url('../img/galeria2.jpg');
+}
+#img3{
+    background-image: url('../img/galeria3.jpg');
+}
+#img4{
+    background-image: url('../img/galeria4.jpg');
+}
+#img5{
+    background-image: url('../img/galeria5.jpg');
+    margin-right: 0;
+}
+
+/* sessao 2 */
+.doces2-img{
+    width: 32.3%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+#img6{
+    background-image: url('../img/galeria6.jpg');
+    margin-left: 0;
+}
+#img7{
+    background-image: url('../img/galeria7.jpg');
+}
+#img8{
+    background-image: url('../img/galeria8.jpg');
+    margin-right: 0;
+}
+
+/* sessao 3 */
+.doces3-img{
+    width: 23.9%;
+    margin-left: .5%;
+    margin-right: .5%;
+}
+#img9{
+    background-image: url('../img/galeria9.jpg');
+    margin-left: 0;
+}
+#img10{
+    background-image: url('../img/galeria10.jpg');
+}
+#img11{
+    background-image: url('../img/galeria11.jpg');
+}
+#img12{
+    background-image: url('../img/galeria12.jpg');
+    margin-right: 0;
+}
+
+/* contato */
+
+#sessao-contato{
+    width: 500px;
+}
+#sessao-contato input[type=text], #sessao-contato input[type=email], #sessao-contato textarea{
+    display: block;
+    border: 1px solid #006599;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+}
+#sessao-contato input[type=text]:focus, #sessao-contato input[type=email]:focus, #sessao-contato textarea:focus{
+    border-color: #2790c6;
+}
+#sessao-contato textarea{
+    height: 150px;
+}
+#sessao-contato input[type=submit]{
+    margin-left: 0;
+    font-size: 16px;
+    width: 180px;
+}
+
+/* footer */
+footer{
+    height: 100px;
+    padding-top: 150px;
+
+}
+footer p{
+    text-align: center;
+    color: #006599;
+    font-weight: bolder;
+    font-size: 20px;
+
+}

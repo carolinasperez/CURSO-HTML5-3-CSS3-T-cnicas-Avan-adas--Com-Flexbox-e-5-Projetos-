@@ -1,0 +1,105 @@
+/* animations */
+
+@keyframes animacao4{
+	from{left: 0;}
+	to{left: 500px; background-color: yellow;}
+}
+@keyframes animacao5{
+	0%{left: 0px; background-color: darkblue;}
+	25%{left: 20px; background-color: blue;}
+	60%{left: 100px; background-color: aqua;}
+	80%{left: 30px;background-color: lightblue;}
+	100%{left: 10px;background-color: white;}
+}
+.box{
+	background-color: orange;
+	width: 50px;
+	height: 50px;
+	animation-name: animacao4;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position: relative;
+
+}
+
+#animation_div4{
+	animation-timing-function:linear;
+}
+#animation_div5{
+	animation-timing-function: ease;
+}
+#animation_div6{
+	animation-timing-function:ease-in;
+}
+#animation_div7{
+	animation-timing-function: ease-out;
+}
+#animation_div8{
+	animation-timing-function: ease-in-out;
+}
+
+#animation_div9{
+	background-color: darkblue;
+	height: 50px;
+	width: 50px;
+	position: relative;
+	animation: animacao5 10s ease-in 2s infinite;
+}
+
+.bnt{
+	display: block;
+	position: relative;
+	padding: 10px;
+	margin-bottom: 25px;
+	width: 150;
+	height: 75;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #333;
+	border: 1px solid #333;
+	cursor: pointer;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+}
+
+.bnt:hover{
+	color: #333;
+	text-transform: uppercase;
+	background-color: #fff;
+	border: 1px solid #333;
+	cursor: pointer;
+}
+.gradient-box{
+	width: 500px;
+	height: 200px;
+	position: relative;
+	margin: 10px;
+} 
+.gradient1{
+	background-image: linear-gradient(purple, blue);
+} 
+.gradient2{
+	background-image: linear-gradient(to top, purple, blue);
+} 
+.gradient3{
+	background-image: linear-gradient(to right, purple, blue);
+} 
+.gradient4{
+	background-image: linear-gradient(to left, purple, blue);
+} 
+.gradient5{
+	background-image: radial-gradient(yellow, green, blue);
+} 
+.gradient6{
+	background-image: radial-gradient(yellow 20%, green 45%, blue);
+} 
+.gradient7{
+	background-image: radial-gradient(circle, yellow 20%, green 45%, blue);
+}
+@font-face{
+	font-family: "Lage Grafica";
+	src: url(fonts/lage_grafica.ttf);
+}
+.fontface{
+	font-family: "Lage Grafica";
+}
